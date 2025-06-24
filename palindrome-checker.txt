@@ -1,0 +1,14 @@
+** start of script.js **
+
+function palindrome(str) {
+  // Remove non-alphanumeric characters and convert to lowercase
+  const cleaned = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  // Compare the cleaned string to its reverse
+  return cleaned === cleaned.split('').reverse().join('');
+}
+
+palindrome("eye");
+
+
+** end of script.js **
+
